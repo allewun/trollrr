@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0E8A956170FB669007945E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E8A955170FB669007945E4 /* UIKit.framework */; };
+		E0E8A958170FB669007945E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E8A957170FB669007945E4 /* Foundation.framework */; };
+		E0E8A95A170FB669007945E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E8A959170FB669007945E4 /* CoreGraphics.framework */; };
+		E0E8A960170FB669007945E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0E8A95E170FB669007945E4 /* InfoPlist.strings */; };
+		E0E8A962170FB669007945E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8A961170FB669007945E4 /* main.m */; };
+		E0E8A966170FB669007945E4 /* TROAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8A965170FB669007945E4 /* TROAppDelegate.m */; };
+		E0E8A968170FB669007945E4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E8A967170FB669007945E4 /* Default.png */; };
+		E0E8A96A170FB669007945E4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E8A969170FB669007945E4 /* Default@2x.png */; };
+		E0E8A96C170FB669007945E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E8A96B170FB669007945E4 /* Default-568h@2x.png */; };
+		E0E8A96F170FB669007945E4 /* TROViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8A96E170FB669007945E4 /* TROViewController.m */; };
+		E0E8A972170FB669007945E4 /* TROViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E8A970170FB669007945E4 /* TROViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E0E8A951170FB669007945E4 /* trollrr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trollrr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E8A955170FB669007945E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E0E8A957170FB669007945E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E0E8A959170FB669007945E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0E8A95D170FB669007945E4 /* trollrr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "trollrr-Info.plist"; sourceTree = "<group>"; };
+		E0E8A95F170FB669007945E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0E8A961170FB669007945E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0E8A963170FB669007945E4 /* trollrr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "trollrr-Prefix.pch"; sourceTree = "<group>"; };
+		E0E8A964170FB669007945E4 /* TROAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TROAppDelegate.h; sourceTree = "<group>"; };
+		E0E8A965170FB669007945E4 /* TROAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TROAppDelegate.m; sourceTree = "<group>"; };
+		E0E8A967170FB669007945E4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E0E8A969170FB669007945E4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E0E8A96B170FB669007945E4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E0E8A96D170FB669007945E4 /* TROViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TROViewController.h; sourceTree = "<group>"; };
+		E0E8A96E170FB669007945E4 /* TROViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TROViewController.m; sourceTree = "<group>"; };
+		E0E8A971170FB669007945E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TROViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0E8A94E170FB668007945E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E8A956170FB669007945E4 /* UIKit.framework in Frameworks */,
+				E0E8A958170FB669007945E4 /* Foundation.framework in Frameworks */,
+				E0E8A95A170FB669007945E4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0E8A946170FB668007945E4 = {
+			isa = PBXGroup;
+			children = (
+				E0E8A95B170FB669007945E4 /* trollrr */,
+				E0E8A954170FB669007945E4 /* Frameworks */,
+				E0E8A952170FB669007945E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0E8A952170FB669007945E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0E8A951170FB669007945E4 /* trollrr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0E8A954170FB669007945E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0E8A955170FB669007945E4 /* UIKit.framework */,
+				E0E8A957170FB669007945E4 /* Foundation.framework */,
+				E0E8A959170FB669007945E4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0E8A95B170FB669007945E4 /* trollrr */ = {
+			isa = PBXGroup;
+			children = (
+				E0E8A964170FB669007945E4 /* TROAppDelegate.h */,
+				E0E8A965170FB669007945E4 /* TROAppDelegate.m */,
+				E0E8A96D170FB669007945E4 /* TROViewController.h */,
+				E0E8A96E170FB669007945E4 /* TROViewController.m */,
+				E0E8A970170FB669007945E4 /* TROViewController.xib */,
+				E0E8A95C170FB669007945E4 /* Supporting Files */,
+			);
+			path = trollrr;
+			sourceTree = "<group>";
+		};
+		E0E8A95C170FB669007945E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0E8A95D170FB669007945E4 /* trollrr-Info.plist */,
+				E0E8A95E170FB669007945E4 /* InfoPlist.strings */,
+				E0E8A961170FB669007945E4 /* main.m */,
+				E0E8A963170FB669007945E4 /* trollrr-Prefix.pch */,
+				E0E8A967170FB669007945E4 /* Default.png */,
+				E0E8A969170FB669007945E4 /* Default@2x.png */,
+				E0E8A96B170FB669007945E4 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0E8A950170FB668007945E4 /* trollrr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E8A975170FB669007945E4 /* Build configuration list for PBXNativeTarget "trollrr" */;
+			buildPhases = (
+				E0E8A94D170FB668007945E4 /* Sources */,
+				E0E8A94E170FB668007945E4 /* Frameworks */,
+				E0E8A94F170FB668007945E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = trollrr;
+			productName = trollrr;
+			productReference = E0E8A951170FB669007945E4 /* trollrr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0E8A948170FB668007945E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TRO;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = troll;
+			};
+			buildConfigurationList = E0E8A94B170FB668007945E4 /* Build configuration list for PBXProject "trollrr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E0E8A946170FB668007945E4;
+			productRefGroup = E0E8A952170FB669007945E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0E8A950170FB668007945E4 /* trollrr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0E8A94F170FB668007945E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E8A960170FB669007945E4 /* InfoPlist.strings in Resources */,
+				E0E8A968170FB669007945E4 /* Default.png in Resources */,
+				E0E8A96A170FB669007945E4 /* Default@2x.png in Resources */,
+				E0E8A96C170FB669007945E4 /* Default-568h@2x.png in Resources */,
+				E0E8A972170FB669007945E4 /* TROViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0E8A94D170FB668007945E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E8A962170FB669007945E4 /* main.m in Sources */,
+				E0E8A966170FB669007945E4 /* TROAppDelegate.m in Sources */,
+				E0E8A96F170FB669007945E4 /* TROViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E0E8A95E170FB669007945E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0E8A95F170FB669007945E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E0E8A970170FB669007945E4 /* TROViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0E8A971170FB669007945E4 /* en */,
+			);
+			name = TROViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0E8A973170FB669007945E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E0E8A974170FB669007945E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0E8A976170FB669007945E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "trollrr/trollrr-Prefix.pch";
+				INFOPLIST_FILE = "trollrr/trollrr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E0E8A977170FB669007945E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "trollrr/trollrr-Prefix.pch";
+				INFOPLIST_FILE = "trollrr/trollrr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0E8A94B170FB668007945E4 /* Build configuration list for PBXProject "trollrr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E8A973170FB669007945E4 /* Debug */,
+				E0E8A974170FB669007945E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0E8A975170FB669007945E4 /* Build configuration list for PBXNativeTarget "trollrr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E8A976170FB669007945E4 /* Debug */,
+				E0E8A977170FB669007945E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0E8A948170FB668007945E4 /* Project object */;
+}
