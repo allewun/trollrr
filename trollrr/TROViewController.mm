@@ -32,15 +32,15 @@ using namespace cv;
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
 //    picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-//    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary])
-    {
-        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    }
-    else
-    {
-        picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-    }
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+//    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary])
+//    {
+//        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+//    }
+//    else
+//    {
+//        picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+//    }
     [self.navigationController presentViewController:picker animated:YES completion:nil];
 }
 
