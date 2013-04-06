@@ -70,8 +70,10 @@ using namespace cv;
         UIImage *maskImg = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"trollface1" ofType:@"png"]];
         layer.contents = (id)[maskImg CGImage];
         layer.frame = f.bounds;
+        NSLog(@"%@",NSStringFromCGRect(f.bounds));
         [self.imageView.layer addSublayer:layer];
     }
+    [self.imageView setNeedsDisplay];
 }
 
 - (NSArray *)findFacesFromImage:(UIImage *)image {
