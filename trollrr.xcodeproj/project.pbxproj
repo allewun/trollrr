@@ -20,6 +20,10 @@
 		E0E8A972170FB669007945E4 /* TROViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E8A970170FB669007945E4 /* TROViewController.xib */; };
 		E0E8A979170FBD82007945E4 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E8A978170FBD82007945E4 /* opencv2.framework */; };
 		E0E8A989170FC8E9007945E4 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E8A988170FC8E9007945E4 /* CoreImage.framework */; };
+		E0E8A98E170FD7F8007945E4 /* trollface1.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E8A98B170FD7F8007945E4 /* trollface1.png */; };
+		E0E8A98F170FD7F8007945E4 /* trollface2.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E8A98C170FD7F8007945E4 /* trollface2.png */; };
+		E0E8A990170FD7F8007945E4 /* trollface3.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E8A98D170FD7F8007945E4 /* trollface3.png */; };
+		E0E8A992170FD83A007945E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E8A991170FD83A007945E4 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		E0E8A971170FB669007945E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TROViewController.xib; sourceTree = "<group>"; };
 		E0E8A978170FBD82007945E4 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		E0E8A988170FC8E9007945E4 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		E0E8A98B170FD7F8007945E4 /* trollface1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trollface1.png; sourceTree = "<group>"; };
+		E0E8A98C170FD7F8007945E4 /* trollface2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trollface2.png; sourceTree = "<group>"; };
+		E0E8A98D170FD7F8007945E4 /* trollface3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trollface3.png; sourceTree = "<group>"; };
+		E0E8A991170FD83A007945E4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E8A992170FD83A007945E4 /* QuartzCore.framework in Frameworks */,
 				E0E8A989170FC8E9007945E4 /* CoreImage.framework in Frameworks */,
 				E0E8A956170FB669007945E4 /* UIKit.framework in Frameworks */,
 				E0E8A958170FB669007945E4 /* Foundation.framework in Frameworks */,
@@ -62,6 +71,7 @@
 		E0E8A946170FB668007945E4 = {
 			isa = PBXGroup;
 			children = (
+				E0E8A991170FD83A007945E4 /* QuartzCore.framework */,
 				E0E8A95B170FB669007945E4 /* trollrr */,
 				E0E8A954170FB669007945E4 /* Frameworks */,
 				E0E8A952170FB669007945E4 /* Products */,
@@ -96,6 +106,7 @@
 				E0E8A96D170FB669007945E4 /* TROViewController.h */,
 				E0E8A96E170FB669007945E4 /* TROViewController.mm */,
 				E0E8A970170FB669007945E4 /* TROViewController.xib */,
+				E0E8A98A170FD7F8007945E4 /* Assets */,
 				E0E8A95C170FB669007945E4 /* Supporting Files */,
 			);
 			path = trollrr;
@@ -113,6 +124,16 @@
 				E0E8A96B170FB669007945E4 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0E8A98A170FD7F8007945E4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E0E8A98B170FD7F8007945E4 /* trollface1.png */,
+				E0E8A98C170FD7F8007945E4 /* trollface2.png */,
+				E0E8A98D170FD7F8007945E4 /* trollface3.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +193,9 @@
 				E0E8A96A170FB669007945E4 /* Default@2x.png in Resources */,
 				E0E8A96C170FB669007945E4 /* Default-568h@2x.png in Resources */,
 				E0E8A972170FB669007945E4 /* TROViewController.xib in Resources */,
+				E0E8A98E170FD7F8007945E4 /* trollface1.png in Resources */,
+				E0E8A98F170FD7F8007945E4 /* trollface2.png in Resources */,
+				E0E8A990170FD7F8007945E4 /* trollface3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

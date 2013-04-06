@@ -29,6 +29,10 @@ using namespace cv;
 }
 
 - (IBAction)takePicture:(id)sender {
+    for (CALayer *layer in self.imageView.layer.sublayers) {
+        [layer removeFromSuperlayer];
+    }
+    
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
 //    picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
@@ -50,13 +54,27 @@ using namespace cv;
     UIActivityIndicatorView *activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     [activity startAnimating];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(){
-        [self findFacesFromImage:image];
+        NSArray *results = [self findFacesFromImage:image];
+        dispatch_async(dispatch_get_main_queue(), ^() {
+            [self drawResults:results];
+        });
     });
+    self.imageView.image = image;
     [picker dismissModalViewControllerAnimated:YES];
     
 }
 
-- (void)findFacesFromImage:(UIImage *)image {
+- (void)drawResults:(NSArray *)results {
+    for (CIFaceFeature *f in results) {
+        CALayer *layer = [CALayer layer];
+        UIImage *maskImg = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"trollface1" ofType:@"png"]];
+        layer.contents = (id)[maskImg CGImage];
+        layer.frame = f.bounds;
+        [self.imageView.layer addSublayer:layer];
+    }
+}
+
+- (NSArray *)findFacesFromImage:(UIImage *)image {
 //    cv::Mat frame = [self cvMatFromUIImage:image];
 //    std::vector<cv::Rect> faces;
 //    Mat frame_gray;
@@ -86,7 +104,7 @@ using namespace cv;
     NSDictionary* imageOptions = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:6] forKey:CIDetectorImageOrientation];
     NSArray* resultArray = [faceDetector featuresInImage:[CIImage imageWithCGImage:image.CGImage] options:imageOptions];
     NSLog(@"%@",resultArray);
-
+    return resultArray;
 }
 
 - (UIImage *)UIImageFromCVMat:(cv::Mat)cvMat{

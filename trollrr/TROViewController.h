@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreImage/CoreImage.h>
 #import <opencv2/opencv.hpp>
+#import <QuartzCore/QuartzCore.h>
 
 @interface TROViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
