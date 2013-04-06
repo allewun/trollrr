@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TROViewController : UIViewController <UIImagePickerControllerDelegate>
+@interface TROViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @end

@@ -27,6 +27,10 @@
 }
 
 - (IBAction)takePicture:(id)sender {
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    [self.navigationController presentViewController:picker animated:YES completion:nil];
 }
 
 @end
