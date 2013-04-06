@@ -50,16 +50,13 @@ using namespace cv;
     UIActivityIndicatorView *activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     [activity startAnimating];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(){
-        UIImage *resultImage = [self findFacesFromImage:image];
-        dispatch_async(dispatch_get_main_queue(), ^() {
-            self.imageView.image = resultImage;
-        });
+        [self findFacesFromImage:image];
     });
     [picker dismissModalViewControllerAnimated:YES];
     
 }
 
-- (UIImage *)findFacesFromImage:(UIImage *)image {
+- (void)findFacesFromImage:(UIImage *)image {
 //    cv::Mat frame = [self cvMatFromUIImage:image];
 //    std::vector<cv::Rect> faces;
 //    Mat frame_gray;
