@@ -55,34 +55,39 @@ using namespace cv;
             self.imageView.image = resultImage;
         });
     });
-  [picker dismissModalViewControllerAnimated:YES];
+    [picker dismissModalViewControllerAnimated:YES];
     
 }
 
 - (UIImage *)findFacesFromImage:(UIImage *)image {
-    cv::Mat frame = [self cvMatFromUIImage:image];
-    std::vector<cv::Rect> faces;
-    Mat frame_gray;
-    cv::CascadeClassifier face_cascade;
+//    cv::Mat frame = [self cvMatFromUIImage:image];
+//    std::vector<cv::Rect> faces;
+//    Mat frame_gray;
+//    cv::CascadeClassifier face_cascade;
+//    
+//    cvtColor( frame, frame_gray, CV_BGR2GRAY );
+//    equalizeHist( frame_gray, frame_gray );
+//    
+//    // Detect faces
+//    face_cascade.detectMultiScale( frame_gray, faces, 1.1, 2, 0, cv::Size(80, 80) );
+//    
+//    NSLog(@"found %d",faces.size());
+//    
+//    for( int i = 0; i < faces.size(); i++ ) {
+//        Mat faceROI = frame_gray( faces[i] );
+//        std::vector<cv::Rect> eyes;
+//
+//        // Draw the face
+//        cv::Point center( faces[i].x + faces[i].width*0.5, faces[i].y + faces[i].height*0.5 );
+//        ellipse( frame, center, cv::Size( faces[i].width*0.5, faces[i].height*0.5), 0, 0, 360, Scalar( 255, 0, 0 ), 2, 8, 0 );
+//    }
+//    
+//    return [self UIImageFromCVMat:frame];
     
-    cvtColor( frame, frame_gray, CV_BGR2GRAY );
-    equalizeHist( frame_gray, frame_gray );
-    
-    // Detect faces
-    face_cascade.detectMultiScale( frame_gray, faces, 1.1, 2, 0, cv::Size(80, 80) );
-    
-    NSLog(@"found %d",faces.size());
-    
-    for( int i = 0; i < faces.size(); i++ ) {
-        Mat faceROI = frame_gray( faces[i] );
-        std::vector<cv::Rect> eyes;
-
-        // Draw the face
-        cv::Point center( faces[i].x + faces[i].width*0.5, faces[i].y + faces[i].height*0.5 );
-        ellipse( frame, center, cv::Size( faces[i].width*0.5, faces[i].height*0.5), 0, 0, 360, Scalar( 255, 0, 0 ), 2, 8, 0 );
-    }
-    
-    return [self UIImageFromCVMat:frame];
+    NSDictionary *detectorOptions = [[NSDictionary alloc] initWithObjectsAndKeys:CIDetectorAccuracyHigh, CIDetectorAccuracy, nil];
+    CIDetector* faceDetector = [CIDetector detectorOfType:CIDetectorTypeFace context:nil options:detectorOptions];
+    NSArray *resultArray = [faceDetector featuresInImage:[CIImage imageWithCGImage:image.CGImage]];
+    NSLog(@"%@",resultArray);
 }
 
 - (UIImage *)UIImageFromCVMat:(cv::Mat)cvMat{
