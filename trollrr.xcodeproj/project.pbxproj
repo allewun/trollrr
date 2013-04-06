@@ -18,6 +18,7 @@
 		E0E8A96C170FB669007945E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E8A96B170FB669007945E4 /* Default-568h@2x.png */; };
 		E0E8A96F170FB669007945E4 /* TROViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8A96E170FB669007945E4 /* TROViewController.m */; };
 		E0E8A972170FB669007945E4 /* TROViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E8A970170FB669007945E4 /* TROViewController.xib */; };
+		E0E8A979170FBD82007945E4 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E8A978170FBD82007945E4 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E0E8A96D170FB669007945E4 /* TROViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TROViewController.h; sourceTree = "<group>"; };
 		E0E8A96E170FB669007945E4 /* TROViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TROViewController.m; sourceTree = "<group>"; };
 		E0E8A971170FB669007945E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TROViewController.xib; sourceTree = "<group>"; };
+		E0E8A978170FBD82007945E4 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 				E0E8A956170FB669007945E4 /* UIKit.framework in Frameworks */,
 				E0E8A958170FB669007945E4 /* Foundation.framework in Frameworks */,
 				E0E8A95A170FB669007945E4 /* CoreGraphics.framework in Frameworks */,
+				E0E8A979170FBD82007945E4 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +76,7 @@
 		E0E8A954170FB669007945E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E0E8A978170FBD82007945E4 /* opencv2.framework */,
 				E0E8A955170FB669007945E4 /* UIKit.framework */,
 				E0E8A957170FB669007945E4 /* Foundation.framework */,
 				E0E8A959170FB669007945E4 /* CoreGraphics.framework */,
@@ -255,6 +259,10 @@
 		E0E8A976170FB669007945E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "trollrr/trollrr-Prefix.pch";
 				INFOPLIST_FILE = "trollrr/trollrr-Info.plist";
@@ -266,6 +274,10 @@
 		E0E8A977170FB669007945E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "trollrr/trollrr-Prefix.pch";
 				INFOPLIST_FILE = "trollrr/trollrr-Info.plist";
