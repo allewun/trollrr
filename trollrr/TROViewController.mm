@@ -83,8 +83,10 @@ using namespace cv;
     
     NSDictionary *detectorOptions = [[NSDictionary alloc] initWithObjectsAndKeys:CIDetectorAccuracyHigh, CIDetectorAccuracy, nil];
     CIDetector* faceDetector = [CIDetector detectorOfType:CIDetectorTypeFace context:nil options:detectorOptions];
-    NSArray *resultArray = [faceDetector featuresInImage:[CIImage imageWithCGImage:image.CGImage]];
+    NSDictionary* imageOptions = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:6] forKey:CIDetectorImageOrientation];
+    NSArray* resultArray = [faceDetector featuresInImage:[CIImage imageWithCGImage:image.CGImage] options:imageOptions];
     NSLog(@"%@",resultArray);
+
 }
 
 - (UIImage *)UIImageFromCVMat:(cv::Mat)cvMat{
