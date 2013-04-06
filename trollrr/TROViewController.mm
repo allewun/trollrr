@@ -33,6 +33,7 @@ using namespace cv;
     picker.delegate = self;
 //    picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+  NSLog(@"picker");
 //    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary])
 //    {
 //        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
@@ -41,7 +42,7 @@ using namespace cv;
 //    {
 //        picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
 //    }
-    [self.navigationController presentViewController:picker animated:YES completion:nil];
+    [self presentViewController:picker animated:YES completion:nil];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
@@ -54,6 +55,7 @@ using namespace cv;
             self.imageView.image = resultImage;
         });
     });
+  [picker dismissModalViewControllerAnimated:YES];
     
 }
 
