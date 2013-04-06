@@ -70,7 +70,9 @@ using namespace cv;
     
     // Detect faces
     face_cascade.detectMultiScale( frame_gray, faces, 1.1, 2, 0, cv::Size(80, 80) );
-     
+    
+    NSLog(@"found %d",faces.size());
+    
     for( int i = 0; i < faces.size(); i++ ) {
         Mat faceROI = frame_gray( faces[i] );
         std::vector<cv::Rect> eyes;
